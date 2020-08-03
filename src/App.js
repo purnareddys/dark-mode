@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import logo from "./logo.svg";
+import Button from "./components/Button";
 import "./App.css";
+import { ThemeContext } from "./themeContext";
 
 function App() {
+  const context = useContext(ThemeContext);
   return (
     <div className="App">
-      <header className="App-header">
+      <header className={`App-header ${context.theme}-theme`}>
         <img src={logo} className="App-logo" alt="logo" />
-        <button>Change Theme</button>
+        <br />
+        <Button />
       </header>
     </div>
   );
