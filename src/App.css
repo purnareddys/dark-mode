@@ -48,8 +48,8 @@
 }
 
 .raise {
-  --color: #ffa260;
-  --hover: #e5ff60;
+  --color: #06cbfc;
+  --hover: #09ff00;
 }
 .raise:hover,
 .raise:focus {
